@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import math
 
 """
 Module that define a function that return an
@@ -6,7 +7,7 @@ concatenate string
 """
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """_summary_
 
     Args:
@@ -15,4 +16,4 @@ def floor(n: float) -> float:
     Returns:
         float: _description_
     """
-    return floor(n)
+    return math.floor(n)
