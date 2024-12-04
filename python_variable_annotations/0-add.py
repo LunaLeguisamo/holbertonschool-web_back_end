@@ -5,7 +5,7 @@ Module that define a function that return an add
 of two arguments
 """
 
-def add(a: float, b: float) -> str:
+def add(a: float, b: float) -> float:
     """_summary_
 
     Args:
