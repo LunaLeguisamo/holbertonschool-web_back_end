@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module that define a function that returns 
+Module that define a function that returns
 the string representation of the float
 """
 

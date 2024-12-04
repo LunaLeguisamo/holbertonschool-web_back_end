@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import math
 
 """
 Module that define a function that return an
 concatenate string
 """
+import math
 
 
 def floor(n: float) -> int:

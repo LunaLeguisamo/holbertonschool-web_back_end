@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-import math
 """
 Module that define a function that returns a tuple
 """
+from typing import Tuple, Union
 
-
-def to_kv(k: str, v: int | float) -> tuple:
+def to_kv(k: str, v:Union[int, float]) -> Tuple[str, float]:
     """_summary_
 
     Args:
@@ -15,4 +14,4 @@ def to_kv(k: str, v: int | float) -> tuple:
     Returns:
         tuple: _description_
     """
-    return (k, math.square(v))
+    return (k, float(v ** 2))
