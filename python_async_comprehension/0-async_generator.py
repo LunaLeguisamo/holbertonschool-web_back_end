@@ -3,7 +3,6 @@
 """
 Module that write a coroutine called async_generator
 that takes no arguments.
-
 """
 import asyncio
 import random
