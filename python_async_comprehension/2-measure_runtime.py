@@ -8,7 +8,7 @@ using asyncio.gather.
 import time
 import asyncio
 from typing import List
-async_comprehension = __import__('1-async_comprehension').async_comprehesion
+async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 async def measure_runtime() -> float:
     """
