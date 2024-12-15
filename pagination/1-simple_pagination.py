@@ -61,6 +61,23 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """Returns a specific page of the dataset.
+
+        This method takes two arguments: `page` (the page number to fetch)
+        and `page_size` (the number of items per page). It validates that both
+        arguments are positive integers, calculates the range of items for the
+        requested page, and returns the corresponding subset of the dataset.
+        If the page or size is invalid or the indices go beyond
+        the dataset size, an empty list is returned.
+
+        Args:
+            page (int): The page number (default is 1).
+            page_size (int): The number of items per page (default is 10).
+
+        Returns:
+            List[List]: A sublist of the dataset containing the items for the
+            requested page.
+        """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 
