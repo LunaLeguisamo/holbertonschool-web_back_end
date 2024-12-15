@@ -3,9 +3,10 @@
 """
 Module that define a function that returns a multiplier
 """
-from typing import Tuple, Union
+from typing import Callable
 
-def make_multiplier(multiplier: float) -> float:
+
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """_summary_
 
     Args:
@@ -14,4 +15,7 @@ def make_multiplier(multiplier: float) -> float:
     Returns:
         float: _description_
     """
-    return 
+    def a_multiplier(a: float) -> float:
+        return multiplier * a
+
+    return a_multiplier
