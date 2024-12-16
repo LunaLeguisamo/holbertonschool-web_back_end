@@ -49,9 +49,9 @@ class Server:
         while len(new_dataset) < page_size:
             if current_index in data:
                 new_dataset.append(data[current_index])
-                current_index += 1
+            current_index += 1
 
-        next_index = current_index + 1 if current_index < len(data) else None
+        next_index = current_index if current_index < len(data) else None
 
         return {
             'index': index,
